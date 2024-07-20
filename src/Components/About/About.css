@@ -1,0 +1,73 @@
+.About{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.About-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.Abaut-right{
+    flex-basis: 56%;
+}
+
+.logooo{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.playicon{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.About h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color: #212EA0;
+}
+
+.About h4{
+    font-weight: 40px;
+    font-size: 18px;
+    
+}
+
+.About {
+    font-weight: 35px;
+    color: #000F38;
+    margin: 10px 0;
+
+}
+
+.About p{
+    color: #676767;
+    margin-bottom: 15px;
+}
+
+.About span{
+    padding-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .About{
+        flex-direction: column;
+    }
+    .About-left{
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .Abaut-right{
+        flex-basis: 100%;
+        margin: 40px;
+    }
+}

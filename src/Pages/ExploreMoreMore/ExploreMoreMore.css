@@ -1,0 +1,44 @@
+.Next-About{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.Title-About{
+    text-align: center;
+    color: #000f38;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 70px 0 30px;
+}
+
+.Title-About h1{
+    font-size: 40px;
+    margin-top: 5px;
+    text-transform: none;
+    text-transform: uppercase;
+}
+
+.Title-About p{
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: justify;
+    
+}
+
+@media (max-width: 650px) {
+    .Title-About h1{
+        font-size: 20px;
+    }
+    .Title-About p{
+        font-size: 11px;
+        padding-top: 10px;
+    }
+
+}
+
+

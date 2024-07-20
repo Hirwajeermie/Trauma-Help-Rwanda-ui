@@ -1,0 +1,19 @@
+.ViewFile{
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/Counselling.jpg');
+    background-Position: center;
+    background-Size: cover;
+    background-Repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    
+
+  }
+
+  .ViewFile h1{
+    color: #fafafa;
+  }

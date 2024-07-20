@@ -1,0 +1,59 @@
+.What-we-do{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.What-wedo img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.What-wedo{
+    flex-basis: 31;
+    margin-right: 15px;
+   
+}
+
+.Title{
+    text-align: center;
+    color: #000f38;
+    font-size: 15px;
+    font-weight: 600;
+    
+    margin: 70px 0 30px;
+}
+
+.Title h1{
+    font-size: 40px;
+    margin-top: 5px;
+    text-transform: none;
+    text-transform: uppercase;
+}
+
+.Title h3{
+    font-weight: 600;
+    font-weight: 16px;
+    color: #212EA0;
+}
+
+.Title p{
+    font-size: 17px;
+}
+
+@media (max-width: 650px) {
+    .What-we-do{
+        flex-direction: column;
+    }
+    .What-wedo{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
+
+

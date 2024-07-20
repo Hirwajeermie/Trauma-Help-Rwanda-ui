@@ -1,0 +1,63 @@
+.file-upload {
+    
+    
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/Counselling.jpg');
+    background-Position: center;
+    background-Size: cover;
+    background-Repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+  }
+
+
+.file-upload h2 {
+  margin-bottom: 20px;
+  color: #fafafa;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.upload-button:hover {
+  background-color: #5f6497;
+}
+
+.file-list {
+  margin-top: 20px;
+  width: 100%;
+  
+}
+
+.file-list h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+
+}
+
+.file-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.file-list li {
+  width: 300px;
+  background-color: #ebe0e0;
+  padding: 5px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(255, 255, 255);
+}
