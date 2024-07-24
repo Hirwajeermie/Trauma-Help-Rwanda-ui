@@ -1,3 +1,5 @@
+// src/context/AuthContext.jsx
+
 import React, { createContext, useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,8 +15,10 @@ export const AuthProvider = ({ children }) => {
   const { token } = useSelector((state) => state.auth);
 
   useEffect(() => {
+    console.log('AuthProvider token:', token);
     if (!token) {
-      navigate('/Login');
+      console.log('No token found, navigating to login.');
+      navigate('/login');
     }
   }, [token, navigate]);
 
@@ -25,7 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   const logoutHandler = () => {
     dispatch(logout());
-    navigate('/Login'); 
+    navigate('/login'); 
   };
 
   return (
@@ -34,3 +38,5 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+export default AuthContext;

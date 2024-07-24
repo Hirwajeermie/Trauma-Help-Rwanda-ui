@@ -17,3 +17,44 @@
   .ViewFile h1{
     color: #fafafa;
   }
+  /* ViewFile.css */
+
+.ViewFile {
+  padding: 20px;
+}
+
+.ViewFile h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.ViewFile table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ViewFile th,
+.ViewFile td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ViewFile th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.ViewFile button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.ViewFile button:hover {
+  background-color: darkred;
+}

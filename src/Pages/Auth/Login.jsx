@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import { loginUser } from '../../services/authService';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate()
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
       await loginUser({ username, password });
-      
+      navigate("/Dashboard")
     } catch (error) {
       console.error(error);
+      alert(error);
     }
   };
 
@@ -47,4 +50,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export  {Login};

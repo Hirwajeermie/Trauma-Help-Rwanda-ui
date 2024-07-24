@@ -1,16 +1,20 @@
+// PrivateRoute.js
+
 import React from 'react';
-import { Route, Navigate } from 'react-router-dom';
+import { Navigate, Outlet } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const PrivateRoute = ({ element: Element, ...rest }) => {
+const PrivateRoute = ({ children }) => {
   const { token } = useSelector((state) => state.auth);
 
-  return (
-    <Route
-      {...rest}
-      element={token ? <Element /> : <Navigate to="/login" />}
-    />
-  );
+  console.log('PrivateRoute token:', token);
+
+  if (!token) {
+    console.log('No token found, redirecting to login.');
+    return <Navigate to="/login" />;
+  }
+
+  return children ? children : <Outlet />;
 };
 
 export default PrivateRoute;

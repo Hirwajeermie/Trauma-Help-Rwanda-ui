@@ -1,10 +1,10 @@
-// src/components/FileUpload.js
-
 import React, { useState } from 'react';
 import './Upload.css';
+import axios from '../../axios'; 
 
 const Upload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
+  const [error, setError] = useState(null);
 
   const handleFileChange = (event) => {
     const files = event.target.files;
@@ -12,10 +12,27 @@ const Upload = () => {
     setSelectedFiles(fileList);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Handle file upload logic here
-    console.log(selectedFiles);
+
+    const formData = new FormData();
+    selectedFiles.forEach((file) => {
+      formData.append('file', file);
+    });
+
+    try {
+      const response = await axios.post('/files/upload', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+       
+      console.log('Files uploaded successfully:', response.data);
+      setSelectedFiles([]);
+    } catch (error) {
+      console.error('File upload failed:', error.response?.data || error.message);
+      setError('File upload failed.');
+    }
   };
 
   return (
@@ -41,7 +58,7 @@ const Upload = () => {
           </ul>
         </div>
       )}
-
+      {error && <p className="error-message">{error}</p>}
     </div>
   );
 };
