@@ -30,11 +30,10 @@ function About() {
       Dr. Wolfgang Woeller specialized in mental health domain.<br></br> Later,
        other 14 members joined the initiator in his vision and mission. 
 
-      </p>
+      </p><br></br>
 
       <h2>TRAUMA HELP RWANDA FONDER</h2 >
       <div className='card'>
-       
                 <div className="slide">
                     <div className="user-move">
                         <img src={user1} alt="" />
