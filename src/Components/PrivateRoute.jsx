@@ -11,7 +11,7 @@ const PrivateRoute = ({ children }) => {
 
   if (!token) {
     console.log('No token found, redirecting to login.');
-    return <Navigate to="/login" />;
+    return <Navigate to="/dashboard" />;
   }
 
   return children ? children : <Outlet />;

@@ -13,7 +13,7 @@ const Login = () => {
 
     try {
       await loginUser({ username, password });
-      navigate("/Dashboard")
+      navigate("/dashboard")
     } catch (error) {
       console.error(error);
       alert(error);

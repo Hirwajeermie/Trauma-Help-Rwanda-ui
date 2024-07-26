@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = (user, token) => {
     dispatch(setCredentials({ user, token }));
-    navigate('/Dashboard'); 
+    navigate('/dashboard'); 
   };
 
   const logoutHandler = () => {
