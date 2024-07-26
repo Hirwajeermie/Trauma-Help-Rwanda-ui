@@ -60,7 +60,7 @@ const ViewFile = () => {
   };
 
   return (
-    <div className="ViewFile">
+    <div className="Report">
       <h1>Reports</h1>
       <ul>
         {Array.isArray(files) && files.length > 0 ? (

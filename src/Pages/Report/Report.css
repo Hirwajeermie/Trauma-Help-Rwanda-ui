@@ -1,16 +1,11 @@
 .Reports{
-    margin: 80px auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    color: aliceblue;
+    
 }
 
-/* Report.css */
-
-.Raport {
+.Report {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  padding: 130px;
 }
 
 h1 {
