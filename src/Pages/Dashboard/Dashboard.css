@@ -22,5 +22,33 @@
     display: flex;
   
   } 
-
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
   
+  .Blue-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .Blue-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .Red-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .Red-btn:hover {
+    background-color: #c82333;
+  }

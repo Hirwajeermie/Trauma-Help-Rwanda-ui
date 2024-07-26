@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Upload.css';
 import axios from '../../axios'; 
+import { useNavigate } from 'react-router-dom';
 
 const Upload = () => {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [error, setError] = useState(null);
+  const navigate = useNavigate()
 
   const handleFileChange = (event) => {
     const files = event.target.files;
@@ -29,6 +31,7 @@ const Upload = () => {
        
       console.log('Files uploaded successfully:', response.data);
       setSelectedFiles([]);
+      navigate("/viewfile");
     } catch (error) {
       console.error('File upload failed:', error.response?.data || error.message);
       setError('File upload failed.');
