@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import './Videoplayer.css'
-// import video from '../../assets/Traumavideo.mp4'
+import video from '../../assets/Traumavideo.mp4.mp4'
 
   const Videoplayer = ({playState, setPlayState}) => {
 
@@ -10,12 +10,12 @@ import './Videoplayer.css'
         setPlayState(false);
     }
 
-  // return (
-  //   // <div className={`Videop-layer ${playState?'':'hide'}`} ref={player} onClick={closePlayer}>
-  //   //     <video src={video} autoPlay muted controls></video>
+   return (
+  <div className={`Videop-layer ${playState?'':'hide'}`} ref={player} onClick={closePlayer}>
+  <video src={video} autoPlay muted controls></video>
 
-  //   // </div>
-  // )
+  </div>
+  )
 }
 
 export default Videoplayer
