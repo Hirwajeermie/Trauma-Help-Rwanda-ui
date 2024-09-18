@@ -39,15 +39,22 @@ function About() {
                         <img src={user1} alt="" />
                         <div>
                             <h3>MUHAYIMANA Jamuel</h3>
-                            <span>founder and managing director </span>
+                            <span>Initiatol of Trauma Help-Rwanda 
+                             <br></br> He is Executive secretary of Trauma Help Rwanda
+                               </span>
                         </div>
                     </div>
+                    <h3>Qualification</h3>
                     <p> 
-                    Position at THR, Executive Secretary and Coordinator of Project. <br></br>
-                    The previous roles as, Counselling psychology (Raster), BCH in Demography (A0), 
-                    Advanced Diploma in Rerilal Health (A1), Certificate in EMDR Training, 
-                    Supervisor and trainer in Trauma psychosocial support plus resource trented 
-                    therapy with element of EMAR.
+                    Master’s degree in Counseling Psychology from BUGEMA UNIVERSITY
+                    Bachelor degree in Demography   from Kigali Independent University (ULK)
+Advanced diploma in Mental Health from Kigali Health Institute (KHI)
+Trainer and supervisor TPSS+/ ROTATE (Trauma Psycho-Social Support plus /
+Resources -Oriented Trauma Therapy with Elements of EMDR) from Trauma Aid Germany.
+Trained in EMDR (Level 1and 2) and supervision training is continuing   in TRAUMA Aid Germany.
+Practitioner in Mental Health domain since  1999.
+
+
                       </p>
                 </div>
           

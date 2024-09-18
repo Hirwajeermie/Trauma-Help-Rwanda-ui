@@ -12,7 +12,7 @@ const Whatwedo = () => {
   return (
     <div id='Whatwedo'>
        <div className='Title'>
-      <h3>What De Do</h3>
+      <h3>What We Do</h3>
         <h1>Our VISION And MISSION</h1>
         <p>Rwandan society is aware of mental health issues, especially psychological 
           Trauma problems, <br /> takes care of them and receives high quality professional services. <br />

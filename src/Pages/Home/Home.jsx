@@ -3,7 +3,7 @@ import './Home.css'
 import Introd from '../../Components/Introd/Introd'
 import Whatwedo from '../../Components/Whatwedo/Whatwedo'
 import About from '../../Components/About/About'
-import Instractor from '../../Components/Instractors/Instractors'
+//import Instractor from '../../Components/Instractors/Instractors'
 import Contactus from '../../Components/Contactus/Contactus'
 import Footer from '../../Components/Footer/Footer'
 import Videoplayer from '../../Components/Videoplayer/Videoplayer'
@@ -18,7 +18,7 @@ const Home = () => {
       <Introd/>
       <Whatwedo/>
       <About setPlayState={setPlayState}/>
-      <Instractor/>
+      
       <Contactus/>
       <Footer/>
     </div>

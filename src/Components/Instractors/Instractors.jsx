@@ -91,27 +91,13 @@ const testimony = () => {
                         record </p>
                 </div>
             </li>
-            <li>
-                <div className="slide">
-                    <div className="user-move">
-                        <img src={user4} alt="" />
-                        <div>
-                            <h3>HIRWA Jeremie</h3>
-                            <span>umuyobizi</span>
-                        </div>
-                    </div>
-                    <p>In my previous roles as, I have spearheaded 
-                        comprehensive social media strategies for 
-                        diverse clients, ranging from startups to 
-                        established brands. I have a proven track 
-                        record </p>
-                </div>
-            </li>
+            
         </ul>
       </div>
       <div className='Title'>
       <h1>Partners</h1>
       <li><img className='Welt-img' src={Welt} alt="" /></li>
+      
       </div>
     </div>
   )

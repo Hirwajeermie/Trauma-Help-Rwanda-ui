@@ -19,6 +19,13 @@
     margin-left: 20px;
 }
 
+.Welt-img{
+    width: 60px;
+    padding-top: 30px;
+    align-items: center;
+    
+}
+
 
 @media (max-width: 600px) {
     .Footer{
