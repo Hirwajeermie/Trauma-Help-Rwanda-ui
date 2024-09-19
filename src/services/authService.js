@@ -2,7 +2,7 @@ import axios from 'axios';
 import { setCredentials, logout } from '../features/authSlice';
 import { store } from '../store';
 
-const API_URL = `http://localhost:7000/api/v1/auth`;
+const API_URL = `https://trauma-help-rwanda-api.onrender.com/api/v1/auth`;
 
 export const registerUser = async (userData) => {
   await axios.post(`${API_URL}/register`, userData);
