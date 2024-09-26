@@ -32,7 +32,7 @@ function About() {
 
       </p><br></br>
 
-      <h2>TRAUMA HELP RWANDA FONDER</h2 >
+      <h2>TRAUMA HELP RWANDA FOUNDER</h2 >
       <div className='card'>
                 <div className="slide">
                     <div className="user-move">

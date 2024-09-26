@@ -4,7 +4,10 @@ import axios from "axios";
 import { store } from "./store";
 
 const api = axios.create({
+
   baseURL: "https://trauma-help-rwanda-api.onrender.com/api/v1",
+
+
 });
 
 api.interceptors.request.use((config) => {
