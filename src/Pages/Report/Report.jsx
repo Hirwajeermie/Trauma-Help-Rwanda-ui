@@ -25,62 +25,27 @@ const ViewFile = () => {
     }
   };
 
-  const getMimeType = (filename) => {
-    const extension = filename.split(".").pop().toLowerCase();
-    switch (extension) {
-      case "pdf":
-        return "application/pdf";
-      case "png":
-      case "jpg":
-      case "jpeg":
-        return "image/jpeg";
-      case "txt":
-        return "text/plain";
-      case "doc":
-      case "docx":
-        return "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-      case "xls":
-      case "xlsx":
-        return "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-      default:
-        return "application/octet-stream";
-    }
-  };
-
-  const viewFile = async (filename) => {
+  const downloadFile = async (file) => {
+    
+    const downloadUrl = `/files/${file.filename}`;
+  
     try {
-      const mimeType = getMimeType(filename);
-      console.log(`Fetching file: ${filename} with MIME type: ${mimeType}`);
-  
-      // Assuming you have a token stored in local storage or context
-      const token = localStorage.getItem('token'); // Adjust this based on how you're storing the token
-  
-      const response = await axios.get(`/files/uploads/${filename}`, {
-        responseType: 'blob',
-        headers: {
-          Authorization: `Bearer ${token}`, // Adjust if using a different method
-        },
+     
+      const response = await axios.get(downloadUrl, {
+        responseType: 'blob', 
       });
   
-      console.log('Response status:', response.status);
-      console.log('Response data:', response.data);
-  
-      if (response.status === 200) {
-        const blob = new Blob([response.data], { type: mimeType });
-        const url = window.URL.createObjectURL(blob);
-        console.log('Blob URL created:', url);
-  
-        const newTab = window.open(url, '_blank');
-        if (newTab) {
-          newTab.focus(); // Bring the new tab into focus
-        } else {
-          console.error('Failed to open new tab. Please allow popups for this site.');
-        }
-      } else {
-        console.error('Failed to fetch file:', response.status);
-      }
+      
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", file.filename); 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link); 
+      window.URL.revokeObjectURL(url); 
     } catch (error) {
-      console.error('Error viewing file:', error);
+      console.error("Error downloading file:", error);
     }
   };
   
@@ -97,7 +62,7 @@ const ViewFile = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   console.log(`Clicked on file: ${file.filename}`);
-                  viewFile(file.filename);
+                  downloadFile(file); 
                 }}
               >
                 {file.filename || "No filename"}
