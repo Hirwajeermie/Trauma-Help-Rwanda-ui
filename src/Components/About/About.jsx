@@ -25,18 +25,17 @@ const About = ({setPlayState}) => {
          IV.Empathy<br/><br/>
 
         </span>
-        <h2>THE PURPOSES OF ORGANIZATION TRAUMA HELP RWANDA.  </h2><br/>
+        <h2>THE PURPOSES OF TRAUMA HELP RWANDA.  </h2><br/>
         <p>To fight against trauma, post-traumatic stress disorder (PTSD)
-          and trauma related disorders in Rwanda community by increasing   it awareness,
-          knowledge that relating to mental health issues   and encouraging people
-          to consult counseling and mental health services available in the Country.</p>
+          and trauma related disorders in Rwanda community by increasing awareness and knowledge relating to mental health issues  
+           and Encouraging people to seek available counseling and mental health services.</p>
 
-        <h2>TRAUMA HELP RWANDA ‘S ACTIVITIES </h2>
+        <h2>TRAUMA HELP RWANDA‘S ACTIVITIES </h2>
         <h4>Our activities are focused   at three levels </h4> <br />
         <span className='ai-list'>
           I.	In Community <br />
-          II.	 At Health centers levels <br />
-          III.	   At Schools levels <br /><br/>
+          II.	 At Health centers <br />
+          III.	   At Schools <br /><br/>
           <button onClick={() => navigate('./ExploreMoreMore')} className='btn'>Explore More</button>
 
         </span>

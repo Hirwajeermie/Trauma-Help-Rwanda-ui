@@ -14,25 +14,34 @@ function About() {
       <div className="Title-About">
       <h1>TRAUMA HELP RWANDA (THR)</h1>
         <p>
-      Trauma Help Rwanda (THR) is a <span> NATIONAL NON-GOVERNMENTAL ORGANISATION recognized
-       by Rwanda Government Board (RGB),<br></br> registered by on</span> No   85/RGB/ NGO/2017.<br></br>
-      Trauma Help -Rwanda was initiated by A Rwandan Mr. MUHAYIMANA Jamuel who is Mental 
-      Health Nurse,<br></br> Bachelor degree in Demography and Master’s degree in Counselling Psychology.<br></br>
-      Furthermore, the initiator of Trauma Help Rwanda is trained in EMDR
-       (Eye Movement Desensitization and Reprocessing) therapy,<br></br> he did an international 
-       training and supervision in Haiti, Thailand and Kenya organized by Trauma Aid Germany.  
+          Trauma Help Rwanda (THR) is a national non-governmental organization (NGO) recognized
+           by the Rwanda Governance Board (RGB), and registered under No. 85/RGB/NGO/2017.<br></br>
+
+           THR was founded by Mr. Jamuel Muhayimana, a Rwandan national who is a Mental 
+           Health Nurse<br></br> with a Bachelor’s degree in Demography and a Master’s degree in Counseling Psychology.<br></br>
+
+           He is also trained in EMDR (Eye Movement Desensitization and Reprocessing) Therapy, having completed international
+           <br></br>training and supervision in Haiti, Thailand, and Kenya, organized by Trauma Aid Germany.<br></br>
+
+           
+
+           
+
       </p>
       
       <p><br></br>
-      As a Counselor Psychologist, most of the time he treats people presenting<br></br> symptoms of Trauma
-       and other psychological trauma related disorders.
-     From its foundation received<br></br> advice and finance support of Trauma Aid Germany through
-      Dr. Wolfgang Woeller specialized in mental health domain.<br></br> Later,
-       other 14 members joined the initiator in his vision and mission. 
+      As a Counseling Psychologist, he primarily supports individuals suffering from 
+       <br></br>trauma-related disorders and other psychological challenges.<br></br>
+
+       Since its founding, THR has received both technical and financial support from<br></br>
+       Trauma Aid Germany, particularly through Dr. Wolfgang Wöller, a specialist in the mental health field. 
+
+       Later, 14 members joined the founder to support and contribute to the organization's vision and mission.
+      
 
       </p><br></br>
 
-      <h2>TRAUMA HELP RWANDA FOUNDER</h2 >
+      <h2>FOUNDER OF TRAUMA HELP RWANDA </h2 >
       <div className='card'>
                 <div className="slide">
                     <div className="user-move">
@@ -40,19 +49,19 @@ function About() {
                         <div>
                             <h3>MUHAYIMANA Jamuel</h3>
                             <span>Initiatol of Trauma Help-Rwanda 
-                             <br></br> He is Executive secretary of Trauma Help Rwanda
+                             <br></br> Executive secretary, Trauma Help Rwanda
                                </span>
                         </div>
                     </div>
                     <h3>Qualification</h3>
                     <p> 
-                    Master’s degree in Counseling Psychology from BUGEMA UNIVERSITY
-                    Bachelor degree in Demography   from Kigali Independent University (ULK)
-Advanced diploma in Mental Health from Kigali Health Institute (KHI)
-Trainer and supervisor TPSS+/ ROTATE (Trauma Psycho-Social Support plus /
-Resources -Oriented Trauma Therapy with Elements of EMDR) from Trauma Aid Germany.
-Trained in EMDR (Level 1and 2) and supervision training is continuing   in TRAUMA Aid Germany.
-Practitioner in Mental Health domain since  1999.
+                   •	Master’s Degree in Counseling Psychology – Bugema University<br></br>
+•	Bachelor’s Degree in Demography – Kigali Independent University (ULK)<br></br>
+•	Advanced Diploma in Mental Health – Kigali Health Institute (KHI)<br></br>
+•	Trainer and Supervisor in TPSS+ / ROTATE (Trauma Psycho-Social Support Plus / Resource-Oriented Trauma Therapy with Elements of EMDR), certified by Trauma Aid Germany<br></br>
+•	Trained in EMDR Levels 1 and 2, currently undergoing supervision training through Trauma Aid <br></br>
+•	Mental Health Practitioner since 1999
+
 
 
                       </p>

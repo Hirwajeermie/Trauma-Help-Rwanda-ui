@@ -43,9 +43,8 @@ const Contactus = () => {
     <div className='Contact' id='Contactus'>
       
         <div className='contact-col'>
-            <h3>Send us a massage <img src={Massage} alt="" /></h3>
-            <p>Feel free to reach out through contact from or find
-                our contact information below. Your feedback, questions, 
+            <h3>Send us a message <img src={Massage} alt="" /></h3>
+            <p>Feel free to reach out via our contact form, or find our contact information below. Your feedback, questions, 
                 and suggestions are important to us as we strive to provide 
                 exceptional help to our Organisation
             </p>
@@ -61,8 +60,8 @@ const Contactus = () => {
             <input type="text" name='Name' placeholder='Enter your name' required/>
             <label >Phone Number</label>
             <input type="Tel" name='Phone' placeholder='Enter your mobile number' required/>
-            <label >Write your masseges here</label>
-            <textarea name="Message"  rows="6" placeholder='Enter your massage' required></textarea>
+            <label >Write your messeges here</label>
+            <textarea name="Message"  rows="6" placeholder='Enter your message' required></textarea>
             <button type='submit' className='btn dark-btn'>Submit now <img src={AArrow} alt="" /></button>
           </form>
           <span>{result}</span>
