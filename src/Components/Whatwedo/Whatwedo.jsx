@@ -37,14 +37,14 @@ const Whatwedo = () => {
         those offered at health centers.
       </div>
       <div className='What-wedo'>
-        <img src={picture2} alt="" />
+        <img src={picture3} alt="" />
         <p>At the community level, we work closely with community actors from the seven administrative 
           sectors of Nyanza District, including:<br />
           Representatives of community health workers (Abajyanama bubuzima), Religious Leaders (Abahagarariye amadini n’amatorero), 
           </p>
       </div>
       <div className='What-wedo'>
-        <img src={picture3} alt="" />
+        <img src={picture2} alt="" />
         <p>
         Trauma Help Rwanda (THR) enhances the effectiveness of psychological trauma counseling by 
         increasing skills of mental health providers in trauma treatment. It also offers InterVision 

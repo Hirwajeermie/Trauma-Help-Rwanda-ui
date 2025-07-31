@@ -18,8 +18,7 @@ function About() {
          1.	Psychological Trauma and Related Disorders
           (e.g., depression, post-traumatic stress disorder)<br/>&nbsp;
           We focus on the causes, symptoms, and treatment both preventive and curative.<br/>
-          2.	Active Listening<br/>
-          A key skill in counseling.
+          2.	Active Listening A key skill in counseling.<br/>
         3.	Introduction to Epilepsy
         Causes, symptoms, and treatment.<br/>
         4.	Mental Health Awareness

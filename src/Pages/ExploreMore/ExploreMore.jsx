@@ -48,12 +48,12 @@ function About() {
                         <img src={user1} alt="" />
                         <div>
                             <h3>MUHAYIMANA Jamuel</h3>
-                            <span>Initiatol of Trauma Help-Rwanda 
-                             <br></br> Executive secretary, Trauma Help Rwanda
+                            <span>
+                             Executive secretary and Project Coordinator, Trauma Help Rwanda
                                </span>
                         </div>
                     </div>
-                    <h3>Qualification</h3>
+                    <h2>Qualification</h2>
                     <p> 
                    •	Master’s Degree in Counseling Psychology – Bugema University<br></br>
 •	Bachelor’s Degree in Demography – Kigali Independent University (ULK)<br></br>
