@@ -12,6 +12,8 @@ import Register from './Pages/Auth/Register';
 import PrivateRoute from './Components/PrivateRoute';
 import ViewFile from './Pages/ViewFiles/ViewFile';
 import { AuthProvider } from './context/AuthContext';
+import ForgotPassword from './Pages/Auth/ForgotPassword';
+import ResetPassword from './Pages/Auth/ResetPassword';
 
 const App = () => {
   return (
@@ -25,6 +27,9 @@ const App = () => {
         <Route path="/Report" element={<Report />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
+
 
         {/* Protected routes */}
         <Route element={<AuthProvider> <PrivateRoute /> </AuthProvider>}>

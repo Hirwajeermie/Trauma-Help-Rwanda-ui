@@ -12,7 +12,7 @@ const ViewFile = () => {
 
   const fetchFiles = async () => {
     try {
-      const response = await axios.get('/files'); 
+      const response = await axios.get('/auth/files'); 
       console.log('Files fetched:', response.data);
 
       // Handle the response to get the array of files
@@ -28,7 +28,7 @@ const ViewFile = () => {
 
   const deleteFile = async (fileId) => {
     try {
-      await axios.delete(`/files/${fileId}`); 
+      await axios.delete(`/auth/files/${fileId}`);
       console.log('File deleted:', fileId);
       fetchFiles(); 
     } catch (error) {

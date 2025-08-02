@@ -8,21 +8,27 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [loading, setLoading] = useState(false);  // ✅ Add loading state
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);  // ✅ Set loading to true when the request starts
 
     if (password !== confirmPassword) {
       alert("Passwords do not match");
+      setLoading(false);  // ✅ Reset loading when passwords don't match
       return;
     }
 
     try {
       await registerUser({ username, email, password });
-      navigate('/Login')
+      navigate('/Login');
     } catch (error) {
       alert("Passwords or username incorrect");
+    } finally {
+      setLoading(false);  // ✅ Set loading to false when the request is done
     }
   };
 
@@ -70,7 +76,15 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit" disabled={loading}>
+          {loading ? (
+            <>
+              Registering... <span className="spinner"></span>
+            </>
+          ) : (
+            "Register"
+          )}
+        </button>
       </form>
     </div>
   );

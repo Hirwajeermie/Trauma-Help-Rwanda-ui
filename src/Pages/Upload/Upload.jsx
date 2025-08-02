@@ -23,7 +23,7 @@ const Upload = () => {
     });
 
     try {
-      const response = await axios.post('/files/upload', formData, {
+      const response = await axios.post('/auth/files/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
